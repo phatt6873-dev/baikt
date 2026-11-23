@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ Bài tập 24 | Trần Thanh Phát - 241A010063</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Thanh điều hướng dùng chung gồm đúng 7 mục liên kết -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Menu chính">
+            <a href="index.html" class="brand-logo" title="Về trang chủ">
+                <span class="brand-badge">TP</span>
+                <span>Trần Thanh Phát</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="bai17.html">Bài 17</a></li>
+                <li><a href="bai18.html">Bài 18</a></li>
+                <li><a href="bai19.html">Bài 19</a></li>
+                <li><a href="bai20.html">Bài 20</a></li>
+                <li><a href="bai21.html">Bài 21</a></li>
+                <li><a href="bai22.html">Bài 22</a></li>
+                <li><a href="den-keo-quan.html">Đèn kéo quân</a></li>
+            </ul>
+            <button type="button" id="themeToggleBtn" class="theme-toggle-btn" title="Đổi giao diện Sáng/Tối">🌙 Tối</button>
+        </nav>
+    </header>
+
+    <!-- Khu vực giới thiệu sinh viên (Portfolio Header) -->
+    <section class="hero-section">
+        <div class="hero-inner">
+            <div class="hero-avatar-wrap">
+                <img src="img/avatar.jpg" alt="Ảnh đại diện Trần Thanh Phát" class="hero-avatar"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="hero-avatar-fallback" style="display: none;">TP</div>
+            </div>
+            <h1 class="hero-title">Xin chào! Mình là Trần Thanh Phát</h1>
+            <p class="hero-subtitle">Sinh viên năm 3 ngành Công nghệ thông tin &ndash; Trường Đại học Văn Hiến</p>
+
+            <div class="student-meta-pills">
+                <span class="meta-pill">MSSV: <strong>241A010063</strong></span>
+                <span class="meta-pill">Khoa: <strong>Công nghệ thông tin</strong></span>
+                <span class="meta-pill">Ngành: <strong>Công nghệ thông tin</strong></span>
+                <span class="meta-pill">Năm học: <strong>Năm 3</strong></span>
+            </div>
+
+            <p class="hero-desc">
+                Website tổng hợp kết quả thực hành từ Bài tập 17 đến Bài tập 22 và mô hình Đèn kéo quân 3D tương tác bằng HTML5, CSS3 và JavaScript thuần.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#danh-sach-bai-tap" class="btn btn-primary">Xem bài tập</a>
+                <a href="den-keo-quan.html" class="btn btn-outline-light">Đèn kéo quân 3D</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Khu vực hiển thị 7 thẻ bài tập bằng CSS Grid -->
+    <main class="main-content" id="danh-sach-bai-tap">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Danh sách Kết quả Bài tập (Bài 17 &ndash; 22 &amp; Bài 24)</h2>
+                <p>Chọn từng thẻ bài tập bên dưới để xem chi tiết kết quả thực hành hoặc trải nghiệm mô hình Đèn kéo quân 3D.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Thẻ 1: Bài tập 17 -->
+                <article class="project-card">
+                    <div class="card-thumb">
+                        <img src="img/den-bai17.png" alt="Kết quả Bài tập 17"
+                             onerror="handleFaceImageError(this, 'Kết quả Bài tập 17', 'img/den-bai17.png')">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Bài tập 17</span>
+                        <h3 class="card-title">Kết quả Bài tập 17</h3>
+                        <p class="card-desc">Trang hiển thị ảnh chụp kết quả thực tế của Bài tập 17 trong học phần Thiết kế Web.</p>
+                        <div class="card-footer-action">
+                            <a href="bai17.html" class="btn btn-navy">Xem kết quả</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Thẻ 2: Bài tập 18 -->
+                <article class="project-card">
+                    <div class="card-thumb">
+                        <img src="img/den-bai18.png" alt="Kết quả Bài tập 18"
+                             onerror="handleFaceImageError(this, 'Kết quả Bài tập 18', 'img/den-bai18.png')">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Bài tập 18</span>
+                        <h3 class="card-title">Kết quả Bài tập 18</h3>
+                        <p class="card-desc">Trang hiển thị ảnh chụp kết quả thực tế của Bài tập 18 trong học phần Thiết kế Web.</p>
+                        <div class="card-footer-action">
+                            <a href="bai18.html" class="btn btn-navy">Xem kết quả</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Thẻ 3: Bài tập 19 -->
+                <article class="project-card">
+                    <div class="card-thumb">
+                        <img src="img/den-bai19.png" alt="Kết quả Bài tập 19"
+                             onerror="handleFaceImageError(this, 'Kết quả Bài tập 19', 'img/den-bai19.png')">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Bài tập 19</span>
+                        <h3 class="card-title">Kết quả Bài tập 19</h3>
+                        <p class="card-desc">Trang hiển thị ảnh chụp kết quả thực tế của Bài tập 19 trong học phần Thiết kế Web.</p>
+                        <div class="card-footer-action">
+                            <a href="bai19.html" class="btn btn-navy">Xem kết quả</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Thẻ 4: Bài tập 20 -->
+                <article class="project-card">
+                    <div class="card-thumb">
+                        <img src="img/den-bai20.png" alt="Kết quả Bài tập 20"
+                             onerror="handleFaceImageError(this, 'Kết quả Bài tập 20', 'img/den-bai20.png')">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Bài tập 20</span>
+                        <h3 class="card-title">Kết quả Bài tập 20</h3>
+                        <p class="card-desc">Trang hiển thị ảnh chụp tổng hợp 2 kết quả thực tế của Bài tập 20.</p>
+                        <div class="card-footer-action">
+                            <a href="bai20.html" class="btn btn-navy">Xem kết quả</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Thẻ 5: Bài tập 21 -->
+                <article class="project-card">
+                    <div class="card-thumb">
+                        <img src="img/den-bai21.png" alt="Kết quả Bài tập 21"
+                             onerror="handleFaceImageError(this, 'Kết quả Bài tập 21', 'img/den-bai21.png')">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Bài tập 21</span>
+                        <h3 class="card-title">Kết quả Bài tập 21</h3>
+                        <p class="card-desc">Trang hiển thị ảnh chụp tổng hợp 4 kết quả thực tế (bố cục 2x2) của Bài tập 21.</p>
+                        <div class="card-footer-action">
+                            <a href="bai21.html" class="btn btn-navy">Xem kết quả</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Thẻ 6: Bài tập 22 -->
+                <article class="project-card">
+                    <div class="card-thumb">
+                        <img src="img/den-bai22.png" alt="Kết quả Bài tập 22"
+                             onerror="handleFaceImageError(this, 'Kết quả Bài tập 22', 'img/den-bai22.png')">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Bài tập 22</span>
+                        <h3 class="card-title">Kết quả Bài tập 22</h3>
+                        <p class="card-desc">Trang hiển thị ảnh chụp kết quả thực tế của Bài tập 22 trong học phần Thiết kế Web.</p>
+                        <div class="card-footer-action">
+                            <a href="bai22.html" class="btn btn-navy">Xem kết quả</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Thẻ 7: Bài tập 24 - Đèn kéo quân 3D -->
+                <article class="project-card featured-card">
+                    <div class="card-thumb">
+                        <img src="img/ketqua-bai24.png" alt="Kết quả Bài tập 24 - Đèn kéo quân 3D"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="illustration-box" style="display: none;">
+                            <span class="illustration-badge">Hình minh họa</span>
+                            <div class="illustration-hex">&#11042; 3D &#11042;</div>
+                            <p class="illustration-caption">Hình minh họa mô hình Đèn kéo quân lục giác 6 mặt (Bài 17 &ndash; Bài 22)</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Bài tập 24 &bull; Trọng tâm</span>
+                        <h3 class="card-title">Đèn kéo quân 3D (JavaScript)</h3>
+                        <p class="card-desc">Mô hình lăng trụ lục giác 6 mặt hiển thị kết quả Bài 17&ndash;22, tự quay tròn bằng requestAnimationFrame() và dừng khi rê chuột.</p>
+                        <div class="card-footer-action">
+                            <a href="den-keo-quan.html" class="btn btn-primary">Xem kết quả</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Chân trang hiển thị đầy đủ thông tin sinh viên -->
+    <footer class="site-footer">
+        <p>&copy; 2026 <strong>Trần Thanh Phát</strong> &ndash; MSSV: <strong>241A010063</strong> &ndash; Sinh viên ngành Công nghệ thông tin &ndash; Đại học Văn Hiến</p>
+        <p>Bài tập 24 &ndash; Web có hiệu ứng JavaScript | Khoa Công nghệ thông tin &ndash; Năm học: Năm 3</p>
+    </footer>
+    <script src="js/den-keo-quan.js"></script>
+</body>
+</html>

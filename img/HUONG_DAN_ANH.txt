@@ -1,0 +1,10 @@
+HUONG DAN DAT ANH VAO THU MUC img/
+===================================
+Giai nen 6 file anh PNG ket qua bai tap 17-22 vao dung thu muc nay voi ten chinh xac:
+1. den-bai17.png (Ket qua Bai 17)
+2. den-bai18.png (Ket qua Bai 18)
+3. den-bai19.png (Ket qua Bai 19)
+4. den-bai20.png (Ket qua Bai 20 - anh ghep 2 o)
+5. den-bai21.png (Ket qua Bai 21 - anh ghep 4 o 2x2)
+6. den-bai22.png (Ket qua Bai 22)
+7. ketqua-bai24.png (Anh chup man hinh Den keo quan 3D sau khi chay thuc te - bo sung sau)

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đèn kéo quân – Bài tập 24 | Trần Thanh Phát - 241A010063</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lantern-page">
+    <!-- Thanh điều hướng dùng chung gồm đúng 7 mục liên kết -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Menu chính">
+            <a href="index.html" class="brand-logo" title="Về trang chủ">
+                <span class="brand-badge">TP</span>
+                <span>Trần Thanh Phát</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="bai17.html">Bài 17</a></li>
+                <li><a href="bai18.html">Bài 18</a></li>
+                <li><a href="bai19.html">Bài 19</a></li>
+                <li><a href="bai20.html">Bài 20</a></li>
+                <li><a href="bai21.html">Bài 21</a></li>
+                <li><a href="bai22.html">Bài 22</a></li>
+                <li><a href="den-keo-quan.html" class="active">Đèn kéo quân</a></li>
+            </ul>
+            <button type="button" id="themeToggleBtn" class="theme-toggle-btn" title="Đổi giao diện Sáng/Tối">🌙 Tối</button>
+        </nav>
+    </header>
+
+    <!-- Khu vực hiển thị Đèn kéo quân 3D ở chính giữa -->
+    <main class="lantern-main">
+        <h1 class="lantern-title">ĐÈN KÉO QUÂN &ndash; BÀI TẬP 24</h1>
+        <p class="lantern-instruction">Di chuyển chuột vào một mặt đèn để tạm dừng</p>
+
+        <div class="lantern-status-bar">
+            <span id="lanternStatusBadge" class="lantern-status-badge">Đang quay tự động (25&deg;/giây)</span>
+            &nbsp;|&nbsp; Góc quay hiện tại: <strong id="lanternAngleText">0&deg;</strong>
+        </div>
+
+        <!-- Khung không gian 3D (có perspective) -->
+        <section class="lantern-stage" aria-label="Mô hình Đèn kéo quân 3D 6 mặt">
+            <div class="lantern-axis" aria-hidden="true"></div>
+
+            <!-- Khối lăng trụ lục giác 6 mặt (preserve-3d) -->
+            <div class="lantern-carousel" id="lanternCarousel">
+                <!-- Mặt 1: Kết quả Bài 17 (0 độ) -->
+                <div class="lantern-face" data-angle="0" data-title="Mặt 1 – Bài tập 17">
+                    <div class="face-header">Mặt 1 &bull; Bài tập 17</div>
+                    <div class="face-body">
+                        <img src="img/den-bai17.png" alt="Kết quả Bài tập 17"
+                             onerror="handleFaceImageError(this, 'Mặt 1 – Bài tập 17', 'img/den-bai17.png')">
+                    </div>
+                </div>
+
+                <!-- Mặt 2: Kết quả Bài 18 (60 độ) -->
+                <div class="lantern-face" data-angle="60" data-title="Mặt 2 – Bài tập 18">
+                    <div class="face-header">Mặt 2 &bull; Bài tập 18</div>
+                    <div class="face-body">
+                        <img src="img/den-bai18.png" alt="Kết quả Bài tập 18"
+                             onerror="handleFaceImageError(this, 'Mặt 2 – Bài tập 18', 'img/den-bai18.png')">
+                    </div>
+                </div>
+
+                <!-- Mặt 3: Kết quả Bài 19 (120 độ) -->
+                <div class="lantern-face" data-angle="120" data-title="Mặt 3 – Bài tập 19">
+                    <div class="face-header">Mặt 3 &bull; Bài tập 19</div>
+                    <div class="face-body">
+                        <img src="img/den-bai19.png" alt="Kết quả Bài tập 19"
+                             onerror="handleFaceImageError(this, 'Mặt 3 – Bài tập 19', 'img/den-bai19.png')">
+                    </div>
+                </div>
+
+                <!-- Mặt 4: Kết quả Bài 20 - ảnh ghép 2 ô (180 độ) -->
+                <div class="lantern-face" data-angle="180" data-title="Mặt 4 – Bài tập 20">
+                    <div class="face-header">Mặt 4 &bull; Bài tập 20</div>
+                    <div class="face-body">
+                        <img src="img/den-bai20.png" alt="Kết quả Bài tập 20 (ghép 2 ô)"
+                             onerror="handleFaceImageError(this, 'Mặt 4 – Bài tập 20', 'img/den-bai20.png')">
+                    </div>
+                </div>
+
+                <!-- Mặt 5: Kết quả Bài 21 - ảnh ghép 4 ô 2x2 (240 độ) -->
+                <div class="lantern-face" data-angle="240" data-title="Mặt 5 – Bài tập 21">
+                    <div class="face-header">Mặt 5 &bull; Bài tập 21</div>
+                    <div class="face-body">
+                        <img src="img/den-bai21.png" alt="Kết quả Bài tập 21 (ghép 4 ô 2x2)"
+                             onerror="handleFaceImageError(this, 'Mặt 5 – Bài tập 21', 'img/den-bai21.png')">
+                    </div>
+                </div>
+
+                <!-- Mặt 6: Kết quả Bài 22 (300 độ) -->
+                <div class="lantern-face" data-angle="300" data-title="Mặt 6 – Bài tập 22">
+                    <div class="face-header">Mặt 6 &bull; Bài tập 22</div>
+                    <div class="face-body">
+                        <img src="img/den-bai22.png" alt="Kết quả Bài tập 22"
+                             onerror="handleFaceImageError(this, 'Mặt 6 – Bài tập 22', 'img/den-bai22.png')">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lantern-bottom-actions">
+            <a href="index.html" class="btn btn-primary">Về trang chủ</a>
+        </div>
+    </main>
+
+    <!-- Chân trang chứa thông tin sinh viên -->
+    <footer class="site-footer">
+        <p><strong>Trần Thanh Phát &ndash; 241A010063</strong></p>
+        <p>Trường Đại học Văn Hiến &bull; Khoa Công nghệ thông tin &bull; Ngành Công nghệ thông tin (Năm 3)</p>
+    </footer>
+
+    <script src="js/den-keo-quan.js"></script>
+</body>
+</html>
